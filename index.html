@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My By Cemal-Cemil</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="#home" class="navbar-logo"> My By <span>Cemal-Cemil</span> </a>
+      <div class="navbar-nav">
+        <a href="#about">Tentang Kami</a>
+        <a href="#product">Produk kami</a>
+        <a href="#qna">Q&A</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#kontak">Kontak kami</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="hamburgermenu">
+          <i data-feather="menu"></i>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="image-container"></div>
+      <main class="content">
+        <h1>Rasakanlah <span>cita rasa</span> abadi</h1>
+        <p>
+          Produk makanan kami adalah wujud nyata dari kualitas dan kreativitas
+          UMKM lokal. Dengan mendukung kami, Anda juga turut berkontribusi pada
+          pertumbuhan ekonomi lokal dan keberlanjutan usaha kecil.
+        </p>
+        <a href="#kontak" class="cta">Beli sekarang</a>
+      </main>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="about-header-line">
+        <h2><span>Tentang</span> Kami</h2>
+      </div>
+      <div class="row">
+        <div class="about-img">
+          <img src="about.png" alt="About Us" />
+        </div>
+        <div class="content">
+          <h3>Kenapa kalian harus membeli kami?</h3>
+          <p class="p-about">
+            Selamat datang di My By Cemal-Cemil, tempat di mana kelezatan dan
+            kesehatan bertemu dalam setiap gigitan! Kami adalah pelopor dalam
+            menghadirkan olahan makanan rumahan yang tidak hanya memanjakan
+            lidah, tetapi juga menjaga kesehatan Anda dan keluarga. Dengan
+            komitmen pada bahan-bahan berkualitas tinggi dan proses pembuatan
+            yang teliti, kami membawa Anda rasa rumah yang tidak pernah pudar.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="product" class="product">
+      <div class="text-with-line">
+        <h1>Produk <span>Kami</span></h1>
+      </div>
+      <h2 class="p-menu">
+        Menu andalan kami yang khusus dibuat untuk anda nikmati
+      </h2>
+      <div class="swiper-container swiper-coverflow">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="store-card">
+              <h4>Mie Bayam</h4>
+              <img src="menu2.png" alt="store" />
+              <h3>Harga - <span>Rp</span>15.000</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="store-card">
+              <h4>Dimsay</h4>
+              <img src="menu1.png" alt="store" />
+              <h3>Harga - <span>Rp</span>10.000/pack</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="store-card">
+              <h4>Mie Buah Naga</h4>
+              <img src="menu3.png" alt="store" />
+              <h3>Harga - <span>Rp</span>15.000</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="store-card">
+              <h4>Mie Bunga Telang</h4>
+              <img src="menu4.png" alt="store" />
+              <h3>Harga - <span>Rp</span>15.000</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="store-card">
+              <h4>Mie Wortel</h4>
+              <img src="menu5.png" alt="store" />
+              <h3>Harga - <span>Rp</span>15.000</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="qna" id="qna">
+      <div class="qna-text-line">
+        <h1>Q<span>&</span>A</h1>
+      </div>
+      <div class="qna-item">
+        <div class="qna-question">
+          <p>Apakah semua produk yang kami jual halal?</p>
+        </div>
+        <div class="qna-answer">
+          <p>Semua produk yang kami jual sudah 100% halal</p>
+        </div>
+      </div>
+      <div class="qna-item">
+        <div class="qna-question">
+          <p>Bagaimana cara memesan produk kami?</p>
+        </div>
+        <div class="qna-answer">
+          <p>Kalian bisa <a href="#kontak">Klik disini</a></p>
+        </div>
+      </div>
+      <div class="qna-item">
+        <div class="qna-question">
+          <p>Kapan aja sih kami buka?</p>
+        </div>
+        <div class="qna-answer">
+          <p>Kami buka setiap hari mulai 7 Pagi sampai jam 9 Malam</p>
+        </div>
+      </div>
+      <div class="qna-item">
+        <div class="qna-question">
+          <p>Siapasih nama pemilik dibalik usaha ini?</p>
+        </div>
+        <div class="qna-answer">
+          <p>
+            Nama pemilik dari My By Cemal-Cemil adalah Hanggari Regina Kapurini
+          </p>
+        </div>
+      </div>
+      <div class="qna-item">
+        <div class="qna-question">
+          <p>Mengapa kami memilih untuk menjual makanan-makanan ini?</p>
+        </div>
+        <div class="qna-answer">
+          <p>
+            Karna kami ingin menghidangkan produk hasil dari pertanian di daerah
+            kami
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container client-container" id="testimoni">
+      <div class="testi-header-line">
+        <h2>Testimoni</h2>
+      </div>
+      <h2 class="section-subheader">
+        Penilaian <span>orang-orang</span> terhadap usaha kami
+      </h2>
+      <!-- Slider main container -->
+      <div class="swiper swiper-multi-slides">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="client-card">
+              <div class="client-content">
+                <div class="client-rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>Belanja disini terjamin pokoke</p>
+              </div>
+              <div class="client-details">
+                <img src="testi1.png" alt="client" />
+                <div>
+                  <h4>Aprianto Sutisno</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="client-card">
+              <div class="client-content">
+                <div class="client-rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>Penjual sangat ramah dan informatif</p>
+              </div>
+              <div class="client-details">
+                <img src="testi2.png" alt="client" />
+                <div>
+                  <h4>Zakiya Aprina</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="client-card">
+              <div class="client-content">
+                <div class="client-rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>Rasanya enak bangettt</p>
+              </div>
+              <div class="client-details">
+                <img src="testi3.png" alt="client" />
+                <div>
+                  <h4>Agus Suprianto</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div class="swiper-slide">
+            <div class="client-card">
+              <div class="client-content">
+                <div class="client-rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>Harga merakyat rasa menggloballl</p>
+              </div>
+              <div class="client-details">
+                <img src="testi4.png" alt="client" />
+                <div>
+                  <h4>Lilis Riyanti</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 5 -->
+          <div class="swiper-slide">
+            <div class="client-card">
+              <div class="client-content">
+                <div class="client-rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>Penjualnya terlalu ramahhh</p>
+              </div>
+              <div class="client-details">
+                <img src="testi5.png" alt="client" />
+                <div>
+                  <h4>Hari Sutono</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section id="kontak" class="kontak">
+      <div class="kontak-info">
+        <h1 class="judul-kontak">Kontak <span>kami</span></h1>
+        <h2><i class="fa fa-phone" aria-hidden="true"></i> Phone</h2>
+        <p>0852-3105-2353</p>
+        <h2><i class="fa fa-envelope" aria-hidden="true"></i> Email</h2>
+        <p>
+          <a href="mailto:hanggariregina@gmail.com"
+            >hanggarirengina@gmail.com</a
+          >
+        </p>
+        <h2><i class="fa fa-map-marker" aria-hidden="true"></i> Address</h2>
+        <p>
+          Dsn. Krajan, Desa Buluagung, Kec. Siliragung, Kab. Banyuwangi, Jawa
+          Timur
+        </p>
+      </div>
+
+      <div class="map-wrapper">
+        <div class="map-container">
+          <iframe
+            src="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.1482265515956!2d114.11436821031737!3d-8.58174358705981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd4096f92704ce7%3A0xc789114e3e474b2d!2sMULIA%20TANI!5e0!3m2!1sid!2sid!4v1725103654811!5m2!1sid!2sid"
+            allowfullscreen="true"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="section-container footer-container">
+        <h4>My By Cemal-Cemils</h4>
+        <div class="footer-socials">
+          <span>
+            <a
+              href="https://www.facebook.com/share/qThMPNUJuJtqEB67/?mibextid=qi2Omg"
+              ><i class="ri-facebook-fill"></i
+            ></a>
+          </span>
+          <span>
+            <a
+              href="https://www.instagram.com/hanggariregina?igsh=bXgyazl6Y2I3eG03"
+              ><i class="ri-instagram-fill"></i
+            ></a>
+          </span>
+          <span>
+            <a href="https://wa.me/+6285231052353"
+              ><i class="ri-whatsapp-fill"></i
+            ></a>
+          </span>
+        </div>
+        <p>
+          Cheap Romantic Vacations. Many people feel that there is a limited
+          amount of abundance, wealth, or chance to succeed in life.
+        </p>
+        <ul class="footer-nav">
+          <li class="footer-link"><a href="#home">Home</a></li>
+          <li class="footer-link"><a href="#about">Tentang kami</a></li>
+          <li class="footer-link"><a href="#product">Produk kami</a></li>
+          <li class="footer-link"><a href="#qna">Q&A</a></li>
+          <li class="footer-link"><a href="#testimoni">Testimoni</a></li>
+        </ul>
+      </div>
+      <div class="footer-bar">
+        <p>
+          Copyright © 2024 Leonard M.B. Diovan. Powered by
+          <a href="https://www.gamelab.id">Gamelab.ID</a>
+        </p>
+      </div>
+    </section>
+
+    <script>
+      feather.replace();
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
