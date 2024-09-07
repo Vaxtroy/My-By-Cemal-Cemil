@@ -728,6 +728,7 @@ iframe {
 /* Media Queries */
 
 /* Laptop/PC */
+/* Laptop/PC */
 @media (max-width: 1366px) {
   html {
     font-size: 75%;
@@ -740,6 +741,10 @@ iframe {
     justify-content: center;
     align-items: center;
     display: flex;
+  }
+
+  .qna-item{
+    font-size: 1.5rem;
   }
 
   .client-content p {
@@ -865,6 +870,11 @@ iframe {
     font-size: 2rem;
   }
 
+  .qna-item{
+    font-size: 1.5rem;
+  }
+
+
   .store-card img {
     object-fit: cover;
     object-position: center;
@@ -964,6 +974,11 @@ iframe {
   body {
     min-height: auto;
   }
+
+  .qna-item{
+    font-size: 1.5rem;
+  }
+
   .client-card {
     margin-top: 0.5rem;
     max-width: 35rem; /* ukuran maksimal untuk perangkat mobile */
@@ -1033,3 +1048,4 @@ iframe {
     border-top: 1px solid var(--primary);
   }
 }
+
