@@ -19,6 +19,31 @@ document.addEventListener("click", function (e) {
   }
 });
 
+// Tambahkan kode ini pada file script.js Anda
+const hero = document.querySelector(".hero-parallax");
+
+window.addEventListener("scroll", () => {
+  const scrollPosition = window.scrollY;
+  hero.style.backgroundPositionY = `${scrollPosition * 0.5}px`;
+});
+
+// Tambahkan kode ini pada file script.js Anda
+ScrollReveal().reveal(".hero-parallax", {
+  origin: "top",
+  distance: "100px",
+  duration: 1000,
+  delay: 0,
+  rotate: { x: 0, y: 0, z: 0 },
+  opacity: 0,
+  scale: 1,
+  easing: "cubic-bezier(0.5, 0, 0, 1)",
+  mobile: true,
+  reset: false,
+  useDelay: "always",
+  viewFactor: 0.25,
+  viewOffset: { top: 0, right: 0, bottom: 0, left: 0 },
+});
+
 // Initialize Swipers
 const swiperCoverflow = new Swiper(".swiper-coverflow", {
   loop: true,
@@ -41,7 +66,7 @@ const swiperMultiSlides = new Swiper(".swiper-multi-slides", {
   centerSlides: true,
   slidesPerView: "auto",
   spaceBetween: 10,
-  loop: false,
+  loop: true,
 });
 
 // Function to add a new menu item
@@ -148,4 +173,145 @@ navbarLinks.forEach((link) => {
     const target = document.querySelector(href);
     target.scrollIntoView({ behavior: "smooth" });
   });
+});
+
+ScrollReveal().reveal(".hero .content h1", {
+  origin: "left",
+  distance: "100px",
+  duration: 1000,
+  delay: 200,
+});
+
+ScrollReveal().reveal(".hero .content p", {
+  origin: "right",
+  distance: "100px",
+  duration: 1000,
+  delay: 400,
+});
+
+ScrollReveal().reveal(".hero .content .cta", {
+  origin: "bottom",
+  distance: "50px",
+  duration: 1000,
+  delay: 600,
+});
+
+// Untuk elemen lain di halaman
+ScrollReveal().reveal(".navbar", {
+  origin: "top",
+  distance: "50px",
+  duration: 1000,
+  delay: 100,
+});
+
+ScrollReveal().reveal(".store-card", {
+  origin: "right",
+  distance: "50px",
+  duration: 1500,
+  interval: 250,
+});
+
+ScrollReveal().reveal(".about-header-line", {
+  origin: "top",
+  distance: "50px",
+  duration: 1000,
+  interval: 200,
+});
+
+ScrollReveal().reveal(".about-img", {
+  origin: "bottom",
+  distance: "50px",
+  duration: 1000,
+  interval: 200,
+});
+
+ScrollReveal().reveal(".content", {
+  origin: "right",
+  distance: "60px",
+  duration: 2000,
+  interval: 200,
+});
+
+ScrollReveal().reveal(".text-with-line", {
+  origin: "left",
+  distance: "60px",
+  duration: 1000,
+  interval: 200,
+});
+
+ScrollReveal().reveal(".p-menu", {
+  origin: "right",
+  distance: "60px",
+  duration: 1000,
+  interval: 200,
+});
+
+ScrollReveal().reveal(".qna", {
+  origin: "top",
+  distance: "80px",
+  duration: 1000,
+  interval: 200,
+});
+
+ScrollReveal().reveal(".qna-item", {
+  origin: "right",
+  distance: "60px",
+  duration: 1000,
+  interval: 200,
+});
+
+ScrollReveal().reveal(".testi-header-line", {
+  origin: "bottom",
+  distance: "50px",
+  duration: 1000,
+  interval: 200,
+});
+
+ScrollReveal().reveal(".section-subheader", {
+  origin: "bottom",
+  distance: "60px",
+  duration: 1200,
+  interval: 200,
+});
+
+ScrollReveal().reveal(".swiper-wrapper", {
+  origin: "right",
+  distance: "70px",
+  duration: 1000,
+  interval: 200,
+});
+
+ScrollReveal().reveal(".kontak-info", {
+  origin: "top",
+  distance: "50px",
+  duration: 1000,
+  interval: 200,
+});
+
+ScrollReveal().reveal(".fa-phone, .fa-envelope, .fa-map-marker", {
+  origin: "left",
+  distance: "50px",
+  duration: 1000,
+  interval: 200,
+});
+
+ScrollReveal().reveal(".map-wrapper", {
+  origin: "bottom",
+  distance: "70px",
+  duration: 1000,
+  interval: 200,
+});
+
+ScrollReveal().reveal(".footer", {
+  origin: "bottom",
+  distance: "70px",
+  duration: 1500,
+  interval: 200,
+});
+
+ScrollReveal().reveal(".footer-container", {
+  origin: "top",
+  distance: "60px",
+  duration: 1000,
+  interval: 200,
 });
