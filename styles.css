@@ -89,11 +89,23 @@ body {
   display: none;
 }
 
+.hero-parallax {
+  background-image: url("heroimg.png");
+  background-attachment: scroll; /* Ubah dari fixed menjadi scroll */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  color: #fff;
+  animation: fadeIn 2s;
+}
+
 .image-container {
   position: absolute;
   width: 100%; /* Sesuaikan ukuran */
   height: 100%; /* Sesuaikan ukuran */
-  background-image: url("path-to-your-image.jpg");
   background-size: cover;
   background-position: center;
   display: inline-block;
@@ -118,7 +130,7 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("heroimg.jpg");
+  background-image: url("heroimg.png");
   background-color: #000000cd;
   background-repeat: no-repeat;
   background-size: cover;
@@ -144,7 +156,6 @@ body {
   padding: 1.4rem 7%;
   max-width: 60rem;
   z-index: 1;
-  margin-top: 8rem;
 }
 
 .hero .content h1 {
@@ -159,7 +170,7 @@ body {
 }
 
 .hero .content p {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   margin-top: 0.5rem;
   line-height: 1.4;
   font-weight: 700;
@@ -252,22 +263,6 @@ body {
 
 .hamburgermenu h2 {
   margin-bottom: 1rem;
-}
-
-.text-with-line {
-  display: flex;
-  align-items: center;
-  position: relative;
-  margin-bottom: 10rem;
-}
-
-.text-with-line::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 2px; /* Lebar garis */
-  background-color: var(--primary); /* Warna garis */
 }
 
 .text-with-line h1 {
@@ -489,9 +484,16 @@ body {
 
 .swiper-slide {
   min-width: 300px;
+  margin: 0 10px;
+}
+
+.client-container {
+  margin-top: 6rem;
+  scroll-margin-top: 4.5rem;
 }
 
 .client-card {
+  margin: 4rem;
   padding: 10px;
   background-color: #f3f4f6;
   border-radius: 1rem;
@@ -567,7 +569,7 @@ body {
 }
 
 .kontak {
-  padding-top: 5rem;
+  padding-top: 6rem;
   width: 70%;
   height: auto;
   margin: auto;
@@ -743,7 +745,7 @@ iframe {
     display: flex;
   }
 
-  .qna-item{
+  .qna-item {
     font-size: 1.5rem;
   }
 
@@ -870,10 +872,9 @@ iframe {
     font-size: 2rem;
   }
 
-  .qna-item{
+  .qna-item {
     font-size: 1.4rem;
   }
-
 
   .store-card img {
     object-fit: cover;
@@ -975,7 +976,7 @@ iframe {
     min-height: auto;
   }
 
-  .qna-item{
+  .qna-item {
     font-size: 1.3rem;
   }
 
@@ -1048,4 +1049,3 @@ iframe {
     border-top: 1px solid var(--primary);
   }
 }
-
