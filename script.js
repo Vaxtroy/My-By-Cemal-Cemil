@@ -204,7 +204,7 @@ ScrollReveal().reveal(".navbar", {
   delay: 100,
 });
 
-ScrollReveal().reveal(".store-card", {
+ScrollReveal().reveal(".swiper-overflow", {
   origin: "right",
   distance: "50px",
   duration: 1500,
